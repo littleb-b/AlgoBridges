@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=1024, initial-scale=1.0, user-scalable=no"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Algo Bridges</title>
   <link rel="stylesheet" href="css/main1.css">
   <link rel="stylesheet" href="css/content-style.css">
@@ -20,23 +21,23 @@
       <div class="logo">Algo Bridges</div>
     </a>
     <!-- 导航栏 -->
-<div class="nav">
-  <ul>
-    <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
-    <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
-      <ul class="menu-second">
-        <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
-        <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
-        <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
-        <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+        <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+          <ul class="menu-second">
+            <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+            <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+            <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+            <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+        </li>
+        <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+        </li>
       </ul>
-    </li>
-    <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
-    </li>
-    <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
-    </li>
-  </ul>
-</div>
+    </div>
   </nav>
 
   <!-- 主页内容 -->
@@ -95,23 +96,25 @@
           <div class="line"></div>
         </header>
         <div class="map">
-          <p>Dijkstra 算法（迪杰斯特拉算法）是一种经典的图算法，用于寻找从一个<b>起点</b>到<b>其他点</b>的<b>最短路径</b>。每一次迭代都是在前一次迭代结果的基础上，进一步<b>优化并推进解的进展</b>，最终在<b>多次迭代</b>后得出所有节点的最短路径。</p>
+          <p>Dijkstra
+            算法（迪杰斯特拉算法）是一种经典的图算法，用于寻找从一个<b>起点</b>到<b>其他点</b>的<b>最短路径</b>。每一次迭代都是在前一次迭代结果的基础上，进一步<b>优化并推进解的进展</b>，最终在<b>多次迭代</b>后得出所有节点的最短路径。
+          </p>
           <div id="graph">
-    
+
           </div>
-          
+
           <div id="map-controls">
             <label for="startNode">起点：</label>
-            <select id="startNode">   
+            <select id="startNode">
             </select>
             <label for="endNode">终点：</label>
             <select id="endNode">
             </select>
             <button onclick="startAlgorithm()">开始查找最短路径</button>
             <button onclick="nextStep()" id="next-step">详细步骤</button>
-              <button onclick="resetGraph()">重置</button>
+            <button onclick="resetGraph()">重置</button>
           </div>
-          
+
           <div id="log">
             <p class="record">记录：</p>
             <pre id="logContent"></pre>
