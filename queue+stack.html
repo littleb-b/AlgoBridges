@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/theme/dracula.min.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+<div class="nav">
+  <ul>
+    <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+    <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+      <ul class="menu-second">
+        <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+        <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+        <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+        <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+      </ul>
+    </li>
+    <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+    </li>
+    <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+    </li>
+  </ul>
+</div>
+  </nav>
+
+  <!-- 主页内容 -->
+  <main>
+    <div class="home c">
+      <div class="title">
+        <h2>队列与栈</h2>
+      </div>
+      <div class="introduce">
+        <header>
+          <div class="line"></div>
+          <h4>概念</h4>
+          <div class="line"></div>
+        </header>
+        <!-- <br> -->
+        <b>什么是队列？</b>
+        <p>
+          队列（Queue）是一种先进先出（FIFO）的数据结构，元素按照插入的顺序依次被移除。例如：排队买票的场景，先来的先服务。
+        </p>
+        <div class="hlight">特性：先进先出（FIFO）。</div>
+        <br>
+        <b>什么是栈？</b>
+        <p>
+          栈（Stack）是一种后进先出（LIFO）的数据结构，最后插入的元素最先被移除。例如：一叠盘子，最后放上的盘子最先被取走。
+        </p>
+        <div class="hlight">特性：后进先出（LIFO）。</div>
+        <br>
+      </div>
+
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>队列与栈的对比</h4>
+          <div class="line"></div>
+        </header>
+        <div class="usepoint">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>特性</th>
+                <th>队列</th>
+                <th>栈</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>操作顺序</td>
+                <td>先进先出</td>
+                <td>后进先出</td>
+              </tr>
+              <tr>
+                <td>典型操作</td>
+                <td>入队、出队</td>
+                <td>入栈、出栈</td>
+              </tr>
+              <tr>
+                <td>实现方式</td>
+                <td>双端队列、链表</td>
+                <td>数组、链表</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>队列与栈的应用场景</h4>
+          <div class="line"></div>
+        </header>
+        <div class="usepoint">
+          <div class="applications">
+            <div class="application">
+              <h3>队列的应用</h3>
+              <ul>
+                <li>任务调度
+                  <p>系统按顺序执行多个任务，如操作系统中的进程调度。</p>
+                </li>
+
+                <li>打印机任务管理
+                  <p>多个打印任务排队处理，先提交的任务先打印。</p>
+                </li>
+                <br>
+                <br>
+                <li>广度优先搜索
+                  <p>图算法中层级遍历节点，先访问距离起点较近的节点。</p>
+                </li>
+              </ul>
+            </div>
+            <div class="application">
+              <h3>栈的应用</h3>
+              <ul>
+                <li>浏览器的历史记录（前进/后退）
+                  <p>网页历史按后进先出的方式实现浏览器的前进和后退功能。</p>
+                </li>
+                <li>拨号历史
+                  <p>每次拨打一个号码时，它会被“入栈”。当你需要拨打上一个号码时，直接从栈顶弹出。</p>
+                </li>
+                <li>深度优先搜索
+                  <p>图算法中保存探索路径，深入某条路径时会用栈来记录未完成的路径，方便回溯。</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="visualization">
+        <header>
+          <div class="line"></div>
+          <h4>队列与栈的可视化呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="q-s">
+          <!-- 输入区域 -->
+          <div class="input-section">
+            <button id="enqueue">入队</button>
+            <button id="dequeue">出队</button>
+            <button id="push">入栈</button>
+            <button id="pop">出栈</button>
+          </div>
+
+          <!-- 可视化区域 -->
+          <div class="visual">
+            <!-- 队列 -->
+            <div class="queue-container">
+              <h4>队列</h4>
+              <div class="queue">
+                <span class="label head-label">队头离开</span>
+                <div class="elements"></div>
+                <span class="label tail-label">队尾</span>
+              </div>
+            </div>
+
+            <!-- 栈 -->
+            <div class="stack-container">
+              <h4>栈</h4>
+              <div class="stack">
+                <span class="label bottom-label">栈底</span>
+                <div class="elements"></div>
+                <span class="label top-label">栈顶离开</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="code">
+        <header>
+          <div class="line"></div>
+          <h4>队列算法代码呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="codeeditor">
+          <div class="editor-container">
+            <textarea id="queuecode">
+
+             </textarea>
+          </div>
+        </div>
+
+      </div>
+      <div class="code">
+        <header>
+          <div class="line"></div>
+          <h4>栈算法代码呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="codeeditor">
+          <div class="editor-container">
+            <textarea id="stackcode">
+
+             </textarea>
+          </div>
+        </div>
+
+      </div>
+  </main>
+
+  <!-- 尾部内容 -->
+  <footer>
+    <div class="end">制作人：梁小冰</div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/addon/edit/matchbrackets.min.js"></script>
+  <script src="js/queue+stack.js"></script>
+
+</body>
+
+</html>

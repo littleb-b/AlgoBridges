@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style3.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+        <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+          <ul class="menu-second">
+            <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+            <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+            <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+            <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+        </li>
+        <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-container">
+
+    <!-- 侧边导航栏 -->
+    <div class="sidebar" id="logo">
+      <ul>
+        <li><a href="practice-bs.html"><span class="icon">&#128269;</span>
+            <div class="icon-txt">二分查找算法</div>
+          </a></li>
+        <li><a href="practice-bsort.html"><span class="icon">&#128173;</span>
+            <div class="icon-txt">冒泡排序算法</div>
+          </a></li>
+        <li class="active"><a href="practice-it+re.html"><span class="icon">&#11088;</span>
+            <div class="icon-txt">&nbsp;迭代&递归</div>
+          </a></li>
+        <li><a href="practice-en.html"><span class="icon">&#128220;</span>
+            <div class="icon-txt">&nbsp;&nbsp;枚举算法</div>
+          </a></li>
+      </ul>
+    </div>
+
+
+    <!-- 主内容区 -->
+    <div class="main-content">
+      <!-- 主页内容 -->
+      <main>
+        <div class="title">
+          <h2>迭代&递归算法题目</h2>
+        </div>
+        <div class="qus-container">
+          <form id="quizForm">
+            <!-- 单选题 -->
+            <header>
+              <div class="line"></div>
+              <h4>单选题</h4>
+              <div class="line"></div>
+            </header>
+            <div class="s-question">
+              <div class="question" id="q1">
+                <p>1. 在迭代算法中，通常通过什么方式来控制循环的终止？</p>
+                <div class="options">
+                  <label><input type="radio" name="q1" value="a"> A、递归基准条件</label>
+                  <label><input type="radio" name="q1" value="b"> B、设定一个最大迭代次数</label>
+                  <label><input type="radio" name="q1" value="c"> C、数据结构变化</label>
+                  <label><input type="radio" name="q1" value="d"> D、外部输入</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q2">
+                <p>2. 以下哪种情况最适合使用迭代算法而不是递归算法？</p>
+                <div class="options">
+                  <label><input type="radio" name="q2" value="a"> A、需要大量的递归调用，并且栈深度较大</label>
+                  <label><input type="radio" name="q2" value="b">B、每次的计算结果都依赖于前一步</label>
+                  <label><input type="radio" name="q2" value="c"> C、问题本身是一个深度优先搜索问题</label>
+                  <label><input type="radio" name="q2" value="d"> D、对于空间复杂度要求较低的场景</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q3">
+                <p>3. 迭代算法和递归算法的一个主要区别是：</p>
+                <div class="options">
+                  <label><input type="radio" name="q3" value="a"> A、迭代算法需要额外的栈空间来存储中间状态</label>
+                  <label><input type="radio" name="q3" value="b"> B、迭代通过显式的循环来实现，递归则通过函数调用来实现</label>
+                  <label><input type="radio" name="q3" value="c"> C、递归算法通常效率更高</label>
+                  <label><input type="radio" name="q3" value="d"> D、迭代算法比递归算法适用于所有类型的问题</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q4">
+                <p>4. 在求解一个大规模问题时，使用迭代算法通常比递归算法的优点是什么？</p>
+                <div class="options">
+                  <label><input type="radio" name="q4" value="a"> A、更容易理解和实现</label>
+                  <label><input type="radio" name="q4" value="b"> B、更高的时间复杂度</label>
+                  <label><input type="radio" name="q4" value="c"> C、可能减少栈溢出的风险</label>
+                  <label><input type="radio" name="q4" value="d"> D、更容易处理非常规数据结构</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q5">
+                <p>5. 以下关于递归算法的描述，哪一项是正确的？</p>
+                <div class="options">
+                  <label><input type="radio" name="q5" value="a"> A、递归算法只能用于求解数学问题</label>
+                  <label><input type="radio" name="q5" value="b"> B、递归须设置明确的终止条件，否则函数调用会进入无限递归</label>
+                  <label><input type="radio" name="q5" value="c"> C、递归算法需要占用更少的内存空间</label>
+                  <label><input type="radio" name="q5" value="d"> D、递归算法比迭代算法更适合所有问题</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q6">
+                <p>6. 在递归算法中，函数调用栈的作用是什么？</p>
+                <div class="options">
+                  <label><input type="radio" name="q6" value="a"> A、保存当前函数的执行上下文（局部变量、返回地址等）</label>
+                  <label><input type="radio" name="q6" value="b"> B、用于优化递归的效率</label>
+                  <label><input type="radio" name="q6" value="c"> C、避免重复计算</label>
+                  <label><input type="radio" name="q6" value="d"> D、缓存递归结果</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q7">
+                <p>7. 以下关于递归和迭代的描述中，错误的是：</p>
+                <div class="options">
+                  <label><input type="radio" name="q7" value="a"> A、递归算法需要函数自身调用，而迭代通过循环结构实现</label>
+                  <label><input type="radio" name="q7" value="b"> B、递归算法比迭代算法更加自然直观</label>
+                  <label><input type="radio" name="q7" value="c"> C、递归算法总是比迭代算法效率更高</label>
+                  <label><input type="radio" name="q7" value="d"> D、递归算法适合具有递归结构的问题</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+            </div>
+
+            <!-- 多选题 -->
+            <header>
+              <div class="line"></div>
+              <h4>多选题</h4>
+              <div class="line"></div>
+            </header>
+
+            <div class="m-question">
+              <div class="question" id="q8">
+                <p>8. 以下哪些是迭代算法的特点？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q8" value="a"> A、更节省内存，不易造成栈溢出</label>
+                  <label><input type="checkbox" name="q8" value="b"> B、通常更容易分析和优化</label>
+                  <label><input type="checkbox" name="q8" value="c"> C、适用于计算非常规类型的问题</label>
+                  <label><input type="checkbox" name="q8" value="d"> D、通过显式循环来解决问题</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q9">
+                <p>9. 以下哪些问题在使用迭代算法时可能会导致效率较低？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q9" value="a"> A、问题没有明显的重复子问题</label>
+                  <label><input type="checkbox" name="q9" value="b"> B、需要对每个子问题进行深度计算</label>
+                  <label><input type="checkbox" name="q9" value="c"> C、数据结构较为复杂，无法简单使用循环解决</label>
+                  <label><input type="checkbox" name="q9" value="d"> D、算法本身存在大量的无效计算</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q10">
+                <p>10. 以下哪些是递归算法的典型特征？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q10" value="a"> A、通过自身调用解决问题</label>
+                  <label><input type="checkbox" name="q10" value="b"> B、通常需要终止条件</label>
+                  <label><input type="checkbox" name="q10" value="c"> C、每次调用都会生成新的栈帧</label>
+                  <label><input type="checkbox" name="q10" value="d"> D、存在栈溢出的风险</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q11">
+                <p>11. 在递归算法中，可能导致效率低下的原因有哪些？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q11" value="a"> A、没有设置终止条件</label>
+                  <label><input type="checkbox" name="q11" value="b"> B、存在大量重复计算</label>
+                  <label><input type="checkbox" name="q11" value="c"> C、调用栈深度过大，耗尽内存</label>
+                  <label><input type="checkbox" name="q11" value="d"> D、缺乏优化手段（如记忆化）</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+            </div>
+
+            <!-- 判断题 -->
+            <header>
+              <div class="line"></div>
+              <h4>判断题</h4>
+              <div class="line"></div>
+            </header>
+
+
+            <div class="t-f-question">
+              <div class="question" id="q12">
+                <p>12. 在递归算法中，每次递归调用都会使用同一个栈帧，而不会生成新的栈帧。</p>
+                <div class="options">
+                  <label><input type="radio" name="q12" value="true"> 正确</label>
+                  <label><input type="radio" name="q12" value="false"> 错误</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q13">
+                <p>13. 迭代算法在内存占用方面通常比递归算法更具优势，尤其在递归深度很大的情况下。</p>
+                <div class="options">
+                  <label><input type="radio" name="q13" value="true"> 正确</label>
+                  <label><input type="radio" name="q13" value="false"> 错误</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q14">
+                <p>14. 在处理大型数据集时，使用迭代算法可能比递归算法更有效，因为它避免了函数调用的开销。</p>
+                <div class="options">
+                  <label><input type="radio" name="q14" value="true"> 正确</label>
+                  <label><input type="radio" name="q14" value="false"> 错误</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+            </div>
+
+            <div class="btn">
+              <button type="button" onclick="submitQuiz()">提交答案</button>
+            </div>
+          </form>
+
+          <div class="result" id="score"></div>
+        </div>
+
+      </main>
+
+      <!-- 尾部内容 -->
+      <footer>
+        <div class="end">制作人：梁小冰</div>
+      </footer>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="js/practice-it+re.js"></script>
+
+</body>
+
+
+</html>

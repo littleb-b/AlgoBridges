@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style3.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+<div class="nav">
+  <ul>
+    <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+    <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+      <ul class="menu-second">
+        <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+        <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+        <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+        <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+      </ul>
+    </li>
+    <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+    </li>
+    <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+    </li>
+  </ul>
+</div>
+  </nav>
+
+  <div class="main-container">
+
+    <!-- 侧边导航栏 -->
+    <div class="sidebar" id="logo">
+      <ul>
+        <li ><a href="practice-bs.html"><span class="icon">&#128269;</span>
+            <div class="icon-txt">二分查找算法</div>
+          </a></li>
+        <li class="active"><a href="practice-bsort.html"><span class="icon">&#128173;</span>
+            <div class="icon-txt">冒泡排序算法</div>
+          </a></li>
+        <li><a href="practice-it+re.html"><span class="icon">&#11088;</span>
+            <div class="icon-txt">&nbsp;迭代&递归</div>
+          </a></li>
+        <li><a href="practice-en.html"><span class="icon">&#128220;</span>
+            <div class="icon-txt">&nbsp;&nbsp;枚举算法</div>
+          </a></li>
+      </ul>
+    </div>
+
+
+    <!-- 主内容区 -->
+    <div class="main-content">
+      <!-- 主页内容 -->
+      <main>
+        <div class="title">
+          <h2>冒泡排序题目</h2>
+        </div>
+        <div class="qus-container">
+          <form id="quizForm">
+            <!-- 单选题 -->
+            <header>
+              <div class="line"></div>
+              <h4>单选题</h4>
+              <div class="line"></div>
+            </header>
+            <div class="s-question">
+              <div class="question" id="q1">
+                <p>1. 冒泡排序的时间复杂度最坏情况下是：</p>
+                <div class="options">
+                  <label><input type="radio" name="q1" value="a"> A、O(n)</label>
+                  <label><input type="radio" name="q1" value="b"> B、O(n²)</label>
+                  <label><input type="radio" name="q1" value="c"> C、O(log n)</label>
+                  <label><input type="radio" name="q1" value="d"> D、O(n log n)</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q2">
+                <p>2. 冒泡排序的特点是：</p>
+                <div class="options">
+                  <label><input type="radio" name="q2" value="a"> A、每次将最大（或最小）元素移动到数组的最前面（或最后面）</label>
+                  <label><input type="radio" name="q2" value="b">B、它是一种不稳定排序算法</label>
+                  <label><input type="radio" name="q2" value="c"> C、其时间复杂度最坏情况下是O(log n)</label>
+                  <label><input type="radio" name="q2" value="d"> D、它适合大规模数据排序</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+            </div>
+
+            <!-- 多选题 -->
+            <header>
+              <div class="line"></div>
+              <h4>多选题</h4>
+              <div class="line"></div>
+            </header>
+
+            <div class="m-question">
+              <div class="question" id="q3">
+                <p>3. 以下哪些说法是关于冒泡排序的正确描述？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q3" value="a"> A、冒泡排序是一种稳定排序算法</label>
+                  <label><input type="checkbox" name="q3" value="b"> B、冒泡排序的最坏时间复杂度是 O(n²)</label>
+                  <label><input type="checkbox" name="q3" value="c"> C、冒泡排序可以用于任何数据类型，只要能够进行比较</label>
+                  <label><input type="checkbox" name="q3" value="d"> D、冒泡排序适用于大规模数据集的排序</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q4">
+                <p>4. 冒泡排序的优势在哪些场景下最为明显？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q4" value="a"> A、数据量小，元素个数不超过100个</label>
+                  <label><input type="checkbox" name="q4" value="b"> B、数据已经部分有序时</label>
+                  <label><input type="checkbox" name="q4" value="c"> C、需要排序的数据类型较复杂（如混合数据类型）</label>
+                  <label><input type="checkbox" name="q4" value="d"> D、数据量极大，元素个数超过百万</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q5">
+                <p>5. 以下哪些情况，冒泡排序不适用或效率较低？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q5" value="a"> A、排序一个包含百万级数据的数组</label>
+                  <label><input type="checkbox" name="q5" value="b"> B、排序一个已经有序的数组</label>
+                  <label><input type="checkbox" name="q5" value="c"> C、排序一个包含大部分重复元素的数组</label>
+                  <label><input type="checkbox" name="q5" value="d"> D、排序一个完全无序的数组，且要求排序速度很快</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q6">
+                <p>6. 冒泡排序与其他排序算法（如快速排序、归并排序）相比，以下哪些特点是它的不足之处？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q6" value="a"> A、时间复杂度较高，尤其在数据量大时效率低</label>
+                  <label><input type="checkbox" name="q6" value="b"> B、不是稳定排序算法</label>
+                  <label><input type="checkbox" name="q6" value="c"> C、无法有效处理大规模数据集</label>
+                  <label><input type="checkbox" name="q6" value="d"> D、不需要额外的空间，是原地排序算法</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+            </div>
+
+            <!-- 判断题 -->            
+            <header>
+              <div class="line"></div>
+              <h4>判断题</h4>
+              <div class="line"></div>
+            </header>
+
+
+            <div class="t-f-question">
+              <div class="question" id="q7">
+                <p>7. 冒泡排序的时间复杂度不会超过 O(n log n)。</p>
+                <div class="options">
+                  <label><input type="radio" name="q7" value="true"> 正确</label>
+                  <label><input type="radio" name="q7" value="false"> 错误</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q8">
+                <p>8. 冒泡排序是一种适合用于内存限制较大的环境中的排序算法。</p>
+                <div class="options">
+                  <label><input type="radio" name="q8" value="true"> 正确</label>
+                  <label><input type="radio" name="q8" value="false"> 错误</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q9">
+                <p>9. 二分查找是一个递归算法。</p>
+                <div class="options">
+                  <label><input type="radio" name="q9" value="true"> 正确</label>
+                  <label><input type="radio" name="q9" value="false"> 错误</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+            </div>
+
+            <div class="btn">
+              <button type="button" onclick="submitQuiz()">提交答案</button>
+            </div>
+          </form>
+
+          <div class="result" id="score"></div>
+        </div>
+
+      </main>
+
+      <!-- 尾部内容 -->
+      <footer>
+        <div class="end">制作人：梁小冰</div>
+      </footer>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="js/practice-bsort.js"></script>
+
+</body>
+
+
+</html>

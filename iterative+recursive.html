@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style2.css">
+  <link rel="stylesheet" href="css/content-style3.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+        <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+          <ul class="menu-second">
+            <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+            <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+            <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+            <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+        </li>
+        <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主页内容 -->
+  <main>
+    <div class="home c">
+      <div class="title">
+        <h2>迭代算法与递归算法对比</h2>
+      </div>
+      <div class="introduce">
+        <header>
+          <div class="line"></div>
+          <h4>概念</h4>
+          <div class="line"></div>
+        </header>
+        <!-- <br> -->
+        <b>什么是迭代？</b>
+        <p>
+          迭代算法是一种通过重复执行某个操作来解决问题的算法。它通过不断地重复某个过程，直到满足某个条件为止。
+        </p>
+        <div class="hlight">特性：重复执行某个操作。</div>
+        <br>
+        <b>什么是递归？</b>
+        <p>
+          递归算法是一种在函数内部调用自身的算法。它将一个大问题分解为多个子问题，通过递归的方式解决。
+        </p>
+        <div class="hlight">特性：调用函数，将问题分解为多个子问题。</div>
+        <br>
+      </div>
+
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>迭代与递归的优缺点</h4>
+          <div class="line"></div>
+        </header>
+        <div class="usepoint">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>特性</th>
+                <th>迭代算法</th>
+                <th>递归算法</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">优点</td>
+                <td>内存使用较少</td>
+                <td>代码简洁，易于理解</td>
+              </tr>
+              <tr>
+                <td>计算过程可控，避免栈溢出</td>
+                <td>能够简洁地表示复杂问题的分解过程</td>
+              </tr>
+              <tr>
+                <td rowspan="2">缺点</td>
+                <td>代码可能较长，易出错</td>
+                <td>可能导致栈溢出，特别是递归深度过大时</td>
+              </tr>
+              <tr>
+                <td>某些问题难以通过简单的迭代实现</td>
+                <td>可能会增加程序的运行时间</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>迭代与递归的应用场景</h4>
+          <div class="line"></div>
+        </header>
+        <div class="usepoint">
+          <div class="applications">
+            <div class="application">
+              <h3>迭代的应用</h3>
+              <ul>
+                <li>动态规划问题
+                  <p>如：Dijkstra 算法用于解决最短路径问题、最长公共子序列（LCS）则用来查找所有序列中最长子序列等。</p>
+                </li>
+                <li>数学问题
+                  <p>可解决阶乘、最大公约数、指数运算等。</p>
+                </li>
+                <li>排序算法
+                  <p>如：冒泡排序、选择排序、插入排序等。</p>
+                </li>
+              </ul>
+            </div>
+            <div class="application">
+              <h3>递归的应用</h3>
+              <ul>
+                <li>树的遍历
+                  <p>如：前序遍历、中序遍历和后序遍历。</p>
+                </li>
+                <li>回溯算法
+                  <p>回溯算法是一种通过穷举所有可能的解，逐步构建解决方案，并在发现当前解不符合要求时“回退”的算法。</p>
+                </li>
+                <li> 分治算法
+                  <p>分治算法是将一个规模为N的问题分解为K个规模较小的子问题，这些子问题相互独立且与原问题性质相同。</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>迭代与递归的区别</h4>
+          <div class="line"></div>
+        </header>
+        <div class="usepoint">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>特性</th>
+                <th>迭代算法</th>
+                <th>递归算法</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>执行方式</td>
+                <td>通过循环实现</td>
+                <td>通过函数调用自身实现的</td>
+              </tr>
+              <tr>
+                <td>内存使用</td>
+                <td>通常使用较少的内存</td>
+                <td>可能会导致栈溢出，尤其是递归深度较大时</td>
+              </tr>
+              <tr>
+                <td>代码复杂度</td>
+                <td>迭代算法的代码通常比递归算法更长</td>
+                <td>递归算法的代码更加简洁 </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <br>
+      </div>
+      <div class="code">
+        <header>
+          <div class="line"></div>
+          <h4>迭代与递归算法实现斐波那契数列代码对比</h4>
+          <div class="line"></div>
+        </header>
+        <div class="code-content">
+          <!-- 左侧：迭代算法 -->
+          <div class="section">
+            <h2>迭代算法实现</h2>
+            <pre class="line-numbers language-javascript">
+<code>
+def fib_iterative(n):
+    a, b = 0, 1
+    for i in range(2, n + 1):
+        a, b = b, a + b
+    return b
+</code>
+                  </pre>
+          </div>
+
+          <!-- 右侧：递归算法 -->
+          <div class="section">
+            <h2>递归算法实现</h2>
+            <pre class="line-numbers language-javascript">
+<code>
+def fib_recursive(n):
+    if n <= 1:
+        return n
+    return fib_recursive(n-1) + fib_recursive(n-2)
+</code>
+                  </pre>
+          </div>
+        </div>
+
+      </div>
+
+  </main>
+
+  <!-- 尾部内容 -->
+  <footer>
+    <div class="end">制作人：梁小冰</div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+
+</body>
+
+</html>

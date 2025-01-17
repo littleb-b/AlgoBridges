@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/theme/dracula.min.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+<div class="nav">
+  <ul>
+    <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+    <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+      <ul class="menu-second">
+        <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+        <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+        <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+        <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+      </ul>
+    </li>
+    <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+    </li>
+    <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+    </li>
+  </ul>
+</div>
+  </nav>
+
+  <!-- 主页内容 -->
+  <main>
+    <div class="home c">
+      <div class="title">
+        <h2>递归算法</h2>
+      </div>
+      <div class="introduce">
+        <header>
+          <div class="line"></div>
+          <h4>概念</h4>
+          <div class="line"></div>
+        </header>
+        <!-- <br> -->
+        <p>
+          递归是通过直接或间接让自身来解决问题的一种方法。
+        </p>
+        <br>
+        <p>
+          递归通常用于将一个复杂的问题分解成更小的相同类型的问题，直到问题变得简单到可以直接解决为止。
+        </p>
+        <br>
+        <p>
+          递归在现实中有许多实际应用，尤其在解决具有重复性、分治性或自相似性的复杂问题时非常有效。如形成分形图（Mandelbrot
+          集合、谢尔宾斯基地毯和分形树）、用于解决数学问题（阶乘、斐波那契数列）、模拟自然界中的现象（雪花形状、植物生长等）。
+        </p>
+        <br>
+      </div>
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>递归算法的基本结构</h4>
+          <div class="line"></div>
+        </header>
+        <div class="usepoint">
+          <p>
+            1、<b>基本情况</b>：递归必须有一个基本情况，也就是不再进行递归调用的条件。当满足这个条件时，函数直接返回结果，不再调用自身。
+          </p>
+          <br>
+          <p>
+            2、<b>递归调用</b>：在非基本情况下，会调用自身函数，以处理问题的一个或多个子问题。每次递归调用都应该使问题的规模减小，最终趋向基本情况。
+          </p>
+          <br>
+          <p>
+            例如：自然数n阶乘的公式
+          </p>
+          <br>
+          <div class="img2"><img src="递归.png" alt=""></div>
+        </div>
+      </div>
+      <div class="adv">
+        <header>
+          <div class="line"></div>
+          <h4>递归算法的优缺点</h4>
+          <div class="line"></div>
+        </header>
+        <div class="advantage">
+          <ul>
+            <li class="adv-title">优点</li>
+            <li><b>·</b>递归通常使代码更简洁、清晰，尤其在处理分解问题时。</li>
+            <li><b>·</b>递归对于处理树形或分支结构问题（如遍历树或图）非常有效。</li>
+            <li class="adv-title">缺点</li>
+            <li><b>·</b>递归可能导致大量函数调用，消耗较多的电脑内存和时间。</li>
+            <li><b>·</b>如果没有恰当的基本情况，递归会进入无限循环，导致程序崩溃（栈溢出）。</li>
+          </ul>
+        </div>
+        
+      </div>
+      <br>
+      <div class="visualization">
+        <header>
+          <div class="line"></div>
+          <h4>递归算法可视化呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="tree">
+          <p>分形树（Fractal Tree） 是一种基于递归生成的数学图形，表现出一种自相似的分形结构。对于分形树来说，从主干出发，每一层的树枝都通过递归地分裂成更小的树枝，直到达到预设的最小分支长度或深度。简单来说，每一根树枝可以被看作是一棵小的“分形树”，这棵小树又有自己的更小的树枝。
+          </p>
+          <br>
+          <ul>
+            <li class="tree-title">分形树生成的基本步骤</li>
+            <li><b>步骤1:</b>从树的根部开始绘制一根树枝。</li>
+            <li><b>步骤2:</b>根据初始分支长度和角度，从树枝的末端，绘制两个新的树枝，每个树枝的长度和角度是递减的。</li>
+            <li><b>步骤3:</b>重复步骤2，直到达到设定的递归深度。</li>
+          </ul>
+          <div class="tree-visualization">
+            <canvas id="treeCanvas" width="800" height="550"></canvas>
+            <div id="tree-controls">
+              <div>
+                <label for="angleSlider">分支角度: <span id="angleValue">30</span>°</label>
+                <input type="range" id="angleSlider" min="10" max="60" value="30">
+              </div>
+              <div>
+                <label for="lengthSlider">初始分支长度: <span id="lengthValue">100</span>px</label>
+                <input type="range" id="lengthSlider" min="50" max="150" value="100">
+              </div>
+              <div>
+                <label for="depthSlider">递归深度: <span id="depthValue">10</span></label>
+                <input type="range" id="depthSlider" min="1" max="12" value="10">
+              </div>
+              <button id="resetButton">重置</button>
+            </div>
+            <div id="explanation">
+              <p id="stepExplanation"></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="code">
+        <header>
+          <div class="line"></div>
+          <h4>递归算法代码呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="codeeditor">
+          <div class="editor-container">
+            <textarea id="code">
+
+             </textarea>
+          </div>
+        </div>
+
+      </div>
+
+  </main>
+
+  <!-- 尾部内容 -->
+  <footer>
+    <div class="end">制作人：梁小冰</div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/addon/edit/matchbrackets.min.js"></script>
+  <script src="js/recursive.js"></script>
+
+</body>
+
+</html>

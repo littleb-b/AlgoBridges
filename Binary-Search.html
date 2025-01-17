@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/theme/dracula.min.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+<div class="nav">
+  <ul>
+    <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+    <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+      <ul class="menu-second">
+        <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+        <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+        <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+        <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+      </ul>
+    </li>
+    <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+    </li>
+    <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+    </li>
+  </ul>
+</div>
+  </nav>
+
+  <!-- 主页内容 -->
+  <main>
+    <div class="home c">
+      <div class="title">
+        <h2>二分查找算法</h2>
+      </div>
+      <div class="introduce">
+        <header>
+          <div class="line"></div>
+          <h4>概念</h4>
+          <div class="line"></div>
+        </header>
+        <!-- <br> -->
+        <p>
+          二分查找又叫折半查找，该方法主要将数列<b>有序排列</b>，采用跳跃式的方式查找数据。以递增数列为例，先以中点位置的元素作为比较对象，如果要找的元素值小于该中点元素，则将待查序列缩小为左半部分，否则为右半部分。每一次比较后都可以将查找区间缩小一半。
+        </p>
+        <br>
+        <p>
+          二分查找是一种高效的查找方法。它可以明显减少比较次数，提高查找效率。在一个有n个元素的有序序列中，利用二分查找大约需要<b>log<sub>2</sub>n次</b>。
+        </p>
+        <br>
+      </div>
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>二分查找算法的使用要点</h4>
+          <div class="line"></div>
+        </header>
+        <p>
+          1、<b>数组必须有序</b>：二分查找算法要求数组是<b>有序的</b>。如果数组无序，需要先进行排序。
+        </p>
+        <br>
+        <p>
+          2、精度：在计算中间值时，利用Python中的算术运算符&nbsp;<b>//&nbsp;取整功能</b>，避免出现小数导致的索引错误。
+        </p>
+        <br>
+        <p>
+          3、边界条件：在实现二分查找时，要特别注意处理边界条件，确保边界的更新不会导致无限循环或越界。
+        </p>
+        <br>
+      </div>
+      <div class="visualization">
+        <header>
+          <div class="line"></div>
+          <h4>二分查找算法可视化呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="array" id="array">
+        </div>
+        <div id="controls">
+          <input type="text" id="array-input" placeholder="输入数组（逗号分隔）"
+            value="1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29">
+          <input type="number" id="target" placeholder="请输入目标值">
+          <button onclick="startSearch()">开始查找</button>
+          <button onclick="pauseSearch()">暂停</button>
+          <button onclick="resumeSearch()">恢复</button>
+          <button onclick="prevStep()">上一步</button>
+          <button onclick="nextStep()">下一步</button>
+        </div>
+
+        <div id="description"></div>
+        <div id="step"></div>
+      </div>
+      <div class="code">
+        <header>
+          <div class="line"></div>
+          <h4>二分查找算法代码呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="codeeditor">
+          <div class="editor-container">
+             <textarea id="code">
+
+             </textarea>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </main>
+
+  <!-- 尾部内容 -->
+  <footer>
+    <div class="end">制作人：梁小冰</div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/addon/edit/matchbrackets.min.js"></script>
+  <script src="js/Binary-Search.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/theme/dracula.min.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+        <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+          <ul class="menu-second">
+            <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+            <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+            <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+            <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+        </li>
+        <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主页内容 -->
+  <main>
+    <div class="home c">
+      <div class="title">
+        <h2>冒泡排序算法</h2>
+      </div>
+      <div class="introduce">
+        <header>
+          <div class="line"></div>
+          <h4>概念</h4>
+          <div class="line"></div>
+        </header>
+        <!-- <br> -->
+        <p>
+          冒泡排序是一种简单直观的<b>排序算法</b>，用来将一组数据按照从小到大或从大到小的顺序排列。
+        </p>
+        <br>
+
+      </div>
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>核心思想</h4>
+          <div class="line"></div>
+        </header>
+        <p>
+          冒泡排序通过<b>两两比较相邻的元素</b>，将不符合顺序的两个元素交换位置。
+        </p>
+        <br>
+        <p>
+          经过多次这样的比较和交换，每一轮都会将当前未排序部分中最大的（或最小的）元素“冒”到队列的末尾，就像气泡在水中上升一样。
+        </p>
+        <br>
+      </div>
+      <div class="feature">
+        <header>
+          <div class="line"></div>
+          <h4>主要特征</h4>
+          <div class="line"></div>
+        </header>
+        <p>
+          1、<b>逐步排序</b>：每一轮比较会确定一个元素的最终位置。
+        </p>
+        <br>
+        <p>
+          2、<b>比较相邻元素</b>：在通过两两比较和交换完成排序。
+        </p>
+        <br>
+        <p>
+          3、<b>多轮遍历</b>：每次只处理当前未排序的部分，直到整个序列有序。
+        </p>
+        <br>
+      </div>
+      <div class="visualization">
+        <header>
+          <div class="line"></div>
+          <h4>冒泡排序算法可视化呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="bubble">
+            <!-- <h4>冒泡排序游戏</h4> -->
+            <div id="arrayContainer"></div>
+            
+            <div id="info">
+              <p id="currentComparison">当前比较：</p>
+              <p id="feedback"></p>
+              <p id="score">得分（满分10分）：0</p>
+            </div>
+            
+            <div class="controls">
+              <button id="yes">需要交换</button>
+              <button id="no">不需要交换</button>
+              <button id="reset">重置</button>
+            </div>
+            
+            <div id="customInput">
+              <p>输入自定义数组（用逗号分隔）：</p>
+              <input type="text" id="arrayInput" placeholder="例如：5,3,8,6,2">
+              <button id="setArray">设定数组</button>
+            </div>
+        </div>
+
+      </div>
+      <div class="code">
+        <header>
+          <div class="line"></div>
+          <h4>冒泡排序算法代码呈现</h4>
+          <div class="line"></div>
+        </header>
+        <div class="codeeditor">
+          <div class="editor-container">
+            <textarea id="code">
+
+             </textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- 尾部内容 -->
+  <footer>
+    <div class="end">制作人：梁小冰</div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/addon/edit/matchbrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="js/bubble-sort.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/theme/dracula.min.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+<div class="nav">
+  <ul>
+    <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+    <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+      <ul class="menu-second">
+        <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+        <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+        <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+        <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+      </ul>
+    </li>
+    <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+    </li>
+    <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+    </li>
+  </ul>
+</div>
+  </nav>
+
+  <!-- 主页内容 -->
+  <main>
+    <div class="home c">
+      <div class="title">
+        <h2>列表</h2>
+      </div>
+      <div class="introduce">
+        <header>
+          <div class="line"></div>
+          <h4>概念</h4>
+          <div class="line"></div>
+        </header>
+        <!-- <br> -->
+        <p>
+          列表（List）是一种有序、可变的数据结构，用于存储一组元素。其元素可以是整型(int)、浮点型(float)、字符串(str)、布尔型(bool)。
+        </p>
+        <div class="hlight"><b>代码示例：</b>my_list = [1, "整数", "true", 4, 3.14]</div>
+      </div>
+
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>列表的基本操作</h4>
+          <div class="line"></div>
+        </header>
+        <div class="basic">
+          <section id="section1">
+            <h3 class="hlight">访问列表元素</h3>
+            <p>通过<b>索引号</b>可以访问列表中的元素。<b>索引号从0开始</b>。</p>
+            <pre><code>numbers = [1, 2, 3, 4]</code></pre>
+            <p>示例：numbers[0] 获取的是第一个元素&nbsp; 1</p>
+            <input type="text" id="accessIndex" placeholder="输入索引获取元素">
+            <button onclick="accessElement()">访问元素</button>
+            <p id="accessResult"></p>
+            <p>相关代码：</p>
+            <pre><code>numbers = [1, 2, 3, 4]<br>print(numbers[0]) //输出 1</code></pre>
+          </section>
+
+          <section id="section2">
+            <h3 class="hlight">修改列表元素</h3>
+            <p>你可以通过索引来修改列表中的元素。</p>
+            <pre><code>fruits = ["apple", "banana", "cherry"]</code></pre>
+            <p>示例：fruits[1] = "orange" 把 "banana" 改成 "orange"</p>
+            <input type="text" id="modifyIndex" placeholder="输入索引修改元素">
+            <input type="text" id="newValue" placeholder="输入新值">
+            <button onclick="modifyElement()">修改元素</button>
+            <p id="modifyResult"></p>
+            <p>相关代码：</p>
+            <pre><code>fruits = ["apple", "banana", "cherry"]<br>fruits[1] = "orange"<br>print(fruits) //输出 ["apple", "orange", "cherry"]</code></pre>
+          </section>
+
+          <section id="section3">
+            <h3 class="hlight">添加元素</h3>
+            <pre><code>numbers = [1, 2, 3, 5, 9]</code></pre>
+            <p>添加元素：numbers.append(7)</p>
+            <button onclick="addElement()">添加元素 7</button>
+            <p id="addResult"></p>
+            <p>相关代码：</p>
+            <pre><code>numbers = [1, 2, 3, 5, 9]<br>numbers.append(7)<br>print(numbers) // 输出 [1, 2, 3, 5, 9, 7]</code></pre>
+
+          </section>
+          <section id="section4">         
+            <h3 class="hlight">删除元素</h3>
+            <pre><code>numbers = [1, 2, 3]</code></pre>
+            <p>删除元素：numbers.remove(2)（删除值为2的元素）</p>
+            <input type="text" id="deleteElement" placeholder="输入要删除的元素">
+            <button onclick="deleteElement()">删除元素</button>
+            <p id="deleteResult"></p>
+            <p>相关代码：</p>
+            <pre><code>numbers = [1, 2, 3]<br>numbers.remove(2)<br>print(numbers) // 输出 [1, 3]</code></pre>
+                
+          </section>
+          <section id="section5">
+            <h3 class="hlight">查找元素</h3>
+            <pre><code>numbers = [1, 4, 9, 12]</code></pre>
+            <p>查找元素：numbers.index(12)（返回元素12的索引）</p>
+            <input type="text" id="findElement" placeholder="输入要查找的元素">
+            <button onclick="findElement()">查找元素</button>
+            <p id="findResult"></p>
+            <p>相关代码：</p>
+            <pre><code>numbers = [1, 4, 9, 12]<br>print(numbers.index(12)) // 输出 3</code></pre>
+          </section>
+          <section id="section6">
+            <h3 class="hlight">计数元素</h3>
+            <pre><code>numbers = [1, 2, 2, 3, 2, 3, 4]</code></pre>
+            <p>计数元素：numbers.count(2)（返回2出现的次数）</p>
+            <input type="text" id="countElement" placeholder="输入要计数的元素">
+            <button onclick="countElement()">计数元素</button>
+            <p id="countResult"></p>
+            <p>相关代码：</p>
+            <pre><code>numbers = [1, 2, 2, 3, 2, 3, 4]<br>print(numbers.count(2)) // 输出 3</code></pre>
+          </section>
+          <section id="section7">
+            <h3 class="hlight">排序元素</h3>
+            <pre><code>numbers = [3, 1, 2, 10, 7, 4]</code></pre>
+            <p>排序：numbers.sort()（升序排列）</p>
+            <button onclick="sortList()">排序列表</button>
+            <p id="sortResult"></p>
+            <p>相关代码：</p>
+            <pre><code>numbers = [3, 1, 2, 10, 7, 4]<br>print(numbers.sort()) // 输出 [1, 2, 3, 4, 7, 10]</code></pre>
+          </section>
+          <section id="section8">
+            <h3 class="hlight">反转列表</h3>
+            <pre><code>numbers = [1, 2, 3]</code></pre>
+            <p>反转：numbers.reverse()（反转列表顺序）</p>
+            <button onclick="reverseList()">反转列表</button>
+            <p id="reverseResult"></p>
+            <p>相关代码：</p>
+            <pre><code>numbers = [1, 2, 3]<br>print(numbers.reverse()) // 输出 [3, 2, 1]</code></pre>
+          </section>
+          <section id="section3">       
+            <h3 class="hlight">合并列表</h3>
+            <pre><code>list1 = [1, 2]<br>list2 = [3, 4]</code></pre>
+            <p>合并：list1.extend(list2)（将list2的元素添加到list1）</p>
+            <button onclick="mergeLists()">合并列表</button>
+            <p id="mergeResult"></p>
+            <p>相关代码：</p>
+            <pre><code>list1 = [1, 2, "信息"]<br>list2 = [3, 4, "技术"]<br>print(list1.extend(list2)) // 输出 [1, 2,"信息", 3, 4,"技术"]</code></pre>
+          </section>
+          <section id="section3">          
+            <h3 class="hlight">切片</h3>
+            <pre><code>numbers = [10, 20, 30, 40, 50]</code></pre>
+            <p>切片：numbers[1:4] 获取从索引1到3的元素</p>
+            <input type="text" id="sliceRange" placeholder="输入切片范围，例如：1, 4">
+            <button onclick="sliceList()">获取切片</button>
+            <p id="sliceResult"></p>
+            <p>相关代码：</p>
+            <pre><code>numbers = [10, 20, 30, 40, 50]<br>print(numbers[1:4]) // 输出 [20, 30, 40]</code></pre>
+          </section>
+        </div>
+      </div>
+      <br>
+      <div class="point">
+        <header>
+          <div class="line"></div>
+          <h4>列表的操作小结</h4>
+          <div class="line"></div>
+        </header>
+        <div class="list-table">
+          <table>
+            <thead>
+              <tr>
+                <th>操作</th>
+                <th>功能描述</th>
+                <th>示例代码</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>添加元素</td>
+                <td>向列表末尾添加元素</td>
+                <td><code>numbers.append(4)</code></td>
+              </tr>
+              <tr>
+                <td>删除元素</td>
+                <td>删除指定值的元素</td>
+                <td><code>numbers.remove(2)</code></td>
+              </tr>
+              <tr>
+                <td>查找元素</td>
+                <td>查找元素并返回其索引</td>
+                <td><code>numbers.index(3)</code></td>
+              </tr>
+              <tr>
+                <td>计数元素</td>
+                <td>计算某元素出现的次数</td>
+                <td><code>numbers.count(2)</code></td>
+              </tr>
+              <tr>
+                <td>排序元素</td>
+                <td>对列表进行升序排序</td>
+                <td><code>numbers.sort()</code></td>
+              </tr>
+              <tr>
+                <td>反转列表</td>
+                <td>将列表的顺序反转</td>
+                <td><code>numbers.reverse()</code></td>
+              </tr>
+              <tr>
+                <td>合并列表</td>
+                <td>合并两个列表</td>
+                <td><code>list1.extend(list2)</code></td>
+              </tr>
+              <tr>
+                <td>切片</td>
+                <td>获取列表的一部分</td>
+                <td><code>numbers[1:4]</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+  </main>
+
+  <!-- 尾部内容 -->
+  <footer>
+    <div class="end">制作人：梁小冰</div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/addon/edit/matchbrackets.min.js"></script>
+  <script src="js/list.js"></script>
+
+</body>
+
+</html>

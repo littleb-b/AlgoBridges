@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/theme/dracula.min.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+        <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+          <ul class="menu-second">
+            <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+            <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+            <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+            <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+        </li>
+        <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="re-head">
+    <div class="resources">
+      <h2>学习资源分享</h2>
+      <div class="filter-bar">
+        <input type="text" id="search" placeholder="搜索资源...">
+        <button class="tag-btn active" data-tag="全部">全&nbsp;&nbsp;部</button>
+        <button class="tag-btn" data-tag="编程">编&nbsp;&nbsp;程</button>
+        <button class="tag-btn" data-tag="算法">算&nbsp;&nbsp;法</button>
+        <button class="tag-btn" data-tag="数据结构">数据结构</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主页内容 -->
+  <main>
+    <div id="resource-container"></div>
+  </main>
+
+  <!-- 尾部内容 -->
+  <footer>
+    <div class="end">制作人：梁小冰</div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/addon/edit/matchbrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="js/resource.js"></script>
+
+</body>
+
+</html>

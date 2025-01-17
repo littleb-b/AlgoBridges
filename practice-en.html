@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style3.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+<div class="nav">
+  <ul>
+    <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+    <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+      <ul class="menu-second">
+        <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+        <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+        <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+        <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+      </ul>
+    </li>
+    <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+    </li>
+    <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+    </li>
+  </ul>
+</div>
+  </nav>
+
+  <div class="main-container">
+
+    <!-- 侧边导航栏 -->
+    <div class="sidebar" id="logo">
+      <ul>
+        <li ><a href="practice-bs.html"><span class="icon">&#128269;</span>
+            <div class="icon-txt">二分查找算法</div>
+          </a></li>
+        <li><a href="practice-bsort.html"><span class="icon">&#128173;</span>
+            <div class="icon-txt">冒泡排序算法</div>
+          </a></li>
+        <li><a href="practice-it+re.html"><span class="icon">&#11088;</span>
+            <div class="icon-txt">&nbsp;迭代&递归</div>
+          </a></li>
+        <li class="active"><a href="practice-en.html"><span class="icon">&#128220;</span>
+            <div class="icon-txt">&nbsp;&nbsp;枚举算法</div>
+          </a></li>
+      </ul>
+    </div>
+
+    <!-- 主内容区 -->
+    <div class="main-content">
+      <!-- 主页内容 -->
+      <main>
+        <div class="title">
+          <h2>枚举算法题目</h2>
+        </div>
+        <div class="qus-container">
+          <form id="quizForm">
+            <!-- 单选题 -->
+            <header>
+              <div class="line"></div>
+              <h4>单选题</h4>
+              <div class="line"></div>
+            </header>
+            <div class="s-question">
+              <div class="question" id="q1">
+                <p>1. 枚举算法的核心思想是：</p>
+                <div class="options">
+                  <label><input type="radio" name="q1" value="a"> A、通过逐一尝试所有可能的解来找到问题的解</label>
+                  <label><input type="radio" name="q1" value="b"> B、通过贪心策略选择当前最优解</label>
+                  <label><input type="radio" name="q1" value="c"> C、通过递归调用自身来解决问题</label>
+                  <label><input type="radio" name="q1" value="d"> D、利用二分法缩小搜索范围</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q2">
+                <p>2. 下列哪个问题最适合用枚举算法解决？</p>
+                <div class="options">
+                  <label><input type="radio" name="q2" value="a"> A、在有序数组中查找特定数值</label>
+                  <label><input type="radio" name="q2" value="b">B、查找一个无序列表中是否存在某个特定的数字</label>
+                  <label><input type="radio" name="q2" value="c"> C、计算 1 到 100 中所有能被 2 或 3 整除的数的个数</label>
+                  <label><input type="radio" name="q2" value="d"> D、求解一元二次方程的根</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q3">
+                <p>3. 在使用枚举算法时，如果找到一个解满足条件，通常会做什么？</p>
+                <div class="options">
+                  <label><input type="radio" name="q3" value="a"> A、立即停止并返回解</label>
+                  <label><input type="radio" name="q3" value="b"> B、继续遍历所有可能的解，寻找最优解</label>
+                  <label><input type="radio" name="q3" value="c"> C、丢弃当前解并继续执行其他算法</label>
+                  <label><input type="radio" name="q3" value="d"> D、直接将解保留，但不进一步检查其他解</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q4">
+                <p>4. 关于枚举算法，以下说法错误的是？</p>
+                <div class="options">
+                  <label><input type="radio" name="q4" value="a"> A、枚举算法可以解决组合问题</label>
+                  <label><input type="radio" name="q4" value="b"> B、枚举算法一般时间复杂度较高</label>
+                  <label><input type="radio" name="q4" value="c"> C、枚举算法适用于解空间较小的问题</label>
+                  <label><input type="radio" name="q4" value="d"> D、枚举算法适用于大规模数据集的处理</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q5">
+                <p>5. 下列哪项不是枚举算法的优点？</p>
+                <div class="options">
+                  <label><input type="radio" name="q5" value="a"> A、实现简单</label>
+                  <label><input type="radio" name="q5" value="b"> B、保证解的完整性</label>
+                  <label><input type="radio" name="q5" value="c"> C、适用于所有类型的计算问题</label>
+                  <label><input type="radio" name="q5" value="d"> D、易于理解和实现</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+            </div>
+
+            <!-- 多选题 -->
+            <header>
+              <div class="line"></div>
+              <h4>多选题</h4>
+              <div class="line"></div>
+            </header>
+
+            <div class="m-question">
+              <div class="question" id="q6">
+                <p>6. 以下哪些属于枚举算法的常见应用？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q6" value="a"> A、图的遍历</label>
+                  <label><input type="checkbox" name="q6" value="b"> B、穷举所有可能的组合以求解最优解</label>
+                  <label><input type="checkbox" name="q6" value="c"> C、排列组合问题的求解</label>
+                  <label><input type="checkbox" name="q6" value="d"> D、使用动态规划解决背包问题</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q7">
+                <p>7. 枚举算法的优势是什么？（多选）</p>
+                <div class="options">
+                  <label><input type="checkbox" name="q7" value="a"> A、能保证找到所有解或最优解</label>
+                  <label><input type="checkbox" name="q7" value="b"> B、适用于解空间小、问题简单的情况</label>
+                  <label><input type="checkbox" name="q7" value="c"> C、不需要复杂的数据结构和算法设计</label>
+                  <label><input type="checkbox" name="q7" value="d"> D、计算效率非常高，尤其适用于大规模问题</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+            </div>
+
+            <!-- 判断题 -->            
+            <header>
+              <div class="line"></div>
+              <h4>判断题</h4>
+              <div class="line"></div>
+            </header>
+
+
+            <div class="t-f-question">
+
+
+              <div class="question" id="q8">
+                <p>8. 枚举算法的时间复杂度是与问题规模呈线性关系的。</p>
+                <div class="options">
+                  <label><input type="radio" name="q8" value="true"> 正确</label>
+                  <label><input type="radio" name="q8" value="false"> 错误</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+
+              <div class="question" id="q9">
+                <p>9. 在枚举算法中，解空间的大小越小，算法的执行效率越高。</p>
+                <div class="options">
+                  <label><input type="radio" name="q9" value="true"> 正确</label>
+                  <label><input type="radio" name="q9" value="false"> 错误</label>
+                </div>
+                <div class="explanation"></div>
+              </div>
+            </div>
+
+            <div class="btn">
+              <button type="button" onclick="submitQuiz()">提交答案</button>
+            </div>
+          </form>
+
+          <div class="result" id="score"></div>
+        </div>
+
+      </main>
+
+      <!-- 尾部内容 -->
+      <footer>
+        <div class="end">制作人：梁小冰</div>
+      </footer>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="js/practice-en.js"></script>
+
+</body>
+
+
+</html>

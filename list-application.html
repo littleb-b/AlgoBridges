@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algo Bridges</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/content-style.css">
+  <link rel="stylesheet" href="css/content-style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/theme/dracula.min.css">
+</head>
+
+<body>
+  <!-- 导航栏条 -->
+  <nav class="navbar ">
+    <!-- 图标部分 -->
+    <a href="#">
+      <div class="logo">Algo Bridges</div>
+    </a>
+    <!-- 导航栏 -->
+<div class="nav">
+  <ul>
+    <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+    <li class="menu"><a href="Bubble-Sort.html">算&nbsp;&nbsp;法</a>
+      <ul class="menu-second">
+        <li class="menu-item"><a href="Bubble-Sort.html">冒泡排序算法</a></li>
+        <li class="menu-item"><a href="enumeration.html">枚举算法</a></li>
+        <li class="menu-item"><a href="Binary-Search.html">二分查找算法</a></li>
+        <li class="menu-item"><a href="iterative.html">迭代算法</a></li>
+      </ul>
+    </li>
+    <li class="menu"><a href="resource.html">资&nbsp;&nbsp;源</a>
+    </li>
+    <li class="menu"><a href="practice-bs.html">练&nbsp;&nbsp;习</a>
+    </li>
+  </ul>
+</div>
+  </nav>
+
+  <!-- 主页内容 -->
+  <main>
+    <div class="home c">
+      <div class="title">
+        <h2>列表的应用-宠物领养系统</h2>
+      </div>
+      <div class="introduce">
+        <header>
+          <div class="line"></div>
+          <h4>列表的基本应用简单回顾</h4>
+          <div class="line"></div>
+        </header>
+        <!-- <br> -->
+        <div class="review">
+          <table>
+            <thead>
+              <tr>
+                <th>列表的基本操作</th>
+                <th>示例代码</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>创建列表</td>
+                <td><code>list = [1, "Teddy", "False", 20.5, "Cook"]</code></td>
+              </tr>
+              <td rowspan="2">添加元素</td>
+              <td><code>pet_list.append("Banana")</code>&nbsp;&nbsp;在列表尾部追加元素Banana</td>
+              </tr>
+              <tr>
+                <td><code>pet_list.insert(索引号, "Banana")</code>&nbsp;&nbsp;在对应索引号位置插入元素Banana</td>
+              </tr>
+              <tr>
+                <td rowspan="2">移除元素</td>
+                <td><code>list.remove("Cook")</code>&nbsp;&nbsp;移除列表中元素Cook</td>
+              </tr>
+              <tr>
+                <td><code>list.pop(索引号)</code>&nbsp;&nbsp;移除列表中索引号对应的元素</td>
+              </tr>
+              <tr>
+                <td>查找元素</td>
+                <td><code>pet_list.index(20.5)</code> &nbsp;&nbsp;返回元素对应的索引号</td>
+              </tr>
+              <tr>
+                <td>统计元素出现次数</td>
+                <td><code>pet_list.count("Cook")</code></td>
+              </tr>
+              <tr>
+                <td>修改元素</td>
+                <td><code>list[3] = "Bobby"</code> &nbsp;&nbsp;将第4个元素改为"Bobby"</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+        </div>
+
+        
+      </div>
+      <div class="point">
+          <header>
+            <div class="line"></div>
+            <h4>宠物领养系统</h4>
+            <div class="line"></div>
+          </header>
+          <div class="list-container">
+            <!-- 左侧题目区域 -->
+            <div class="left-panel">
+              <p>以下是一个宠物领养系统的代码，您需要完成代码中的空白部分：</p>
+              <pre><code>pet_list = ["Molly", "Teddy", "Charlie", "Max", "Cookie"] # 创建一个存储宠物名字的列表
+
+# 1、添加宠物名单
+<span class="ls-highlight" id="highlight1">①</span> # 将宠物"Banana"添加到待领养宠物列表中
+
+# 2、领养宠物
+<span class="ls-highlight" id="highlight2">②</span> # 宠物"Teddy"被领养了，从pet_list中移除"Teddy"
+num = 1 # 初始化编号变量
+while num <= len(pet_list): # 使用while循环遍历宠物列表，并打印出每个宠物的编号和名字
+    print(f"{num}.{pet_list[num-1]}") 
+    num +=1
+choice=int(input("请输入您想领养的宠物编号")) # 获取领养的宠物编号 
+if 0 < choice <=len(pet_list): # 检查编号是否在列表内 
+    adopted_pet=pet_list.<span class="ls-highlight" id="highlight3">③</span>  #列表的pop函数移除被领养的宠物
+    print(f"好的，恭喜宠物{adopted_pet}被人领养！")
+else: 
+    print("输入的宠物编号无效，请重新输入。") 
+    
+# 3、修改宠物信息 
+<span class="ls-highlight" id="highlight4">④</span> # 修改第四个元素的内容为"Bobby"
+print(pet_list)
+
+# 4、宠物名核查，并输出当前待领养宠物的数量
+pet_name = "Lucky"
+name_count = pet_list.<span class="ls-highlight" id="highlight5">⑤</span> # 使用列表的count方法统计名字"Lucky"在列表中出现的次数
+print(f"目前，该宠物名字的使用情况为{name_count}") # 打印出宠物名字"Lucky"的使用情况
+if name_count == 0:
+    pet_list.append(pet_name)
+    print(f"新宠物已添加到待领养列表，当前待领养的宠物名单为{pet_list}")
+    pet_num = <span class="ls-highlight" id="highlight1">⑥</span> # 更新待领养宠物的数量
+    print(f"宠物{pet_name}添加后，待领养的宠物数量为{pet_num}")
+              </code></pre>
+            </div>
+
+            <div class="right-panel">
+              <!-- 右侧用户输入区域 -->
+              <div class="questions-container">
+                <!-- 问题1 -->
+                <div class="question-box">
+                  <h3>1. 添加宠物名单</h3>
+                  <p>请填写代码，将宠物"Banana"添加到待领养的宠物列表中。</p>
+                  <input type="text" id="step1" >
+                  <div id="feedback-step1" class="feedback"></div>
+
+                </div>
+
+                <!-- 问题2 -->
+                <div class="question-box">
+                  <h3>2. 领养宠物</h3>
+                  <p>请填写代码，将宠物"Teddy"被移除。</p>
+                  <input type="text" id="step2" >
+                  <div id="feedback-step2" class="feedback"></div>
+
+                </div>
+
+                <!-- 问题3 -->
+                <div class="question-box">
+                  <h3>3. 领养宠物</h3>
+                  <p>请填写代码，移除被领养的宠物。</p>
+                  <input type="text" id="step3" >
+                  <div id="feedback-step3" class="feedback"></div>
+
+                </div>
+
+                <!-- 问题4 -->
+                <div class="question-box">
+                  <h3>4. 修改宠物信息</h3>
+                  <p>请填写代码，修改第四个元素为"Bobby"。</p>
+                  <input type="text" id="step4" >
+                  <div id="feedback-step4" class="feedback"></div>
+
+                </div>
+
+                <!-- 问题5 -->
+                <div class="question-box">
+                  <h3>5. 宠物名核查</h3>
+                  <p>请填写代码统计"Lucky"名字出现的次数。</p>
+                  <input type="text" id="step5" >
+                  <div id="feedback-step5" class="feedback"></div>
+
+                </div>
+
+                <!-- 问题6 -->
+                <div class="question-box">
+                  <h3>6. 更新宠物数量</h3>
+                  <p>请填写代码，更新待领养宠物的数量。</p>
+                  <input type="text" id="step6" >
+                  <div id="feedback-step6" class="feedback"></div>
+
+                </div>
+              </div>
+
+              <!-- 提交按钮 -->
+              <button class="submit-btn" onclick="checkAnswers()">提交答案</button>
+
+              <!-- 用户反馈区域 -->
+              <div id="feedback" class="feedback"></div>
+            </div>
+          </div>
+
+        </div>
+      <div id="vcontainer">
+        <header>
+          <div class="line"></div>
+          <h4>宠物领养系统微课讲解</h4>
+          <div class="line"></div>
+        </header>
+        <div id="video-container">
+          <video controls>
+            <source src="resource/list.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+          </video>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- 尾部内容 -->
+  <footer>
+    <div class="end">制作人：梁小冰</div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/addon/edit/matchbrackets.min.js"></script>
+  <script src="js/list-application.js"></script>
+
+</body>
+
+</html>
