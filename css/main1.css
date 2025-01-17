@@ -30,35 +30,32 @@ li {
       margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container {
     padding: 10px;
     width: 100%;
-    /* 屏幕宽度较小，容器宽度为100% */
   }
 
   header h1 {
     font-size: 24px;
-    /* 小屏设备上缩小字体 */
   }
 
   .content {
     flex-direction: column;
-    /* 内容从横向排列改为纵向排列 */
   }
 }
 
-/* 手机设备：最大宽度为480px */
+
 @media (max-width: 480px) {
   header h1 {
     font-size: 20px;
-    /* 进一步缩小标题字体 */
+
   }
 
   .section {
     padding: 10px;
   }
-}
+} */
 
 .navbar {
   height: 70px;
